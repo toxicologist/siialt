@@ -46,83 +46,16 @@ h3{
 	text-shadow: 2px 2px 8px #000000;
 }
 
-#c{
-	padding-bottom: 3%;
-	display: inline-block;
-	text-align: left;
-}
-
-#date{
-	float: right;
-	display: inline;
-	padding-bottom: 1%;
-}
-
-#vote {
-	display: inline-block;
-	float: right;
-}
-
-#comments{
-	padding-top: 13%;
-}
-
-.ctable{
-	max-width: inherit;
-	box-sizing: border-box;
-	table-layout: fixed;
-    border-spacing: 1px 5px;
-}
-
-#confession-container:hover .preport{
-	display: inline;
-}
-
-.ctable td{
-	background-color: #222222;
-	white-space: normal;
-	word-wrap: break-word;
-	padding: 10px;
-	border-radius: 10px;
-	border: 5px;
-}
-
-.ctable td:nth-child(1):hover .creport{
-	display: inline;
-}
-
-.ctable td:nth-child(1) {
-	padding: 10px;
-	text-align: left;
-	max-width: 450px;
-	min-width: 450px;
-	word-break: break-word;
-}
-
-.ctable td:nth-child(2) {
-	max-height: 50px;
-	vertical-align: top;
-	text-align: right;
-	width: fit-content;
-}
-
-textarea.confession{
-	padding: 7px;
-	border-style: solid;
-	resize: none;
-    font-family: Times New Roman;
-	font-size: 115%;
-	border-radius: 10px;
-}
-
 #title{
-	font-size: 400%;
-	padding: 3%;
+	font-size: 450%;
+	padding: 1.5%;
 }
 
 a.title{
 	text-decoration: none;
-	color: #00FF01;
+	color: whitesmoke;
+	text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+
 }
 
 #subtext{
@@ -130,6 +63,7 @@ a.title{
 	font-size: 150%;
 	font-style: italic;
 	padding-bottom: 3%;
+	text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 2px 2px #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 #error{
@@ -141,7 +75,7 @@ a.title{
 button{
 	border:none;
 	font-weight: bold;
-	padding: 15px 32px;
+	padding: 10px 12px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -150,21 +84,18 @@ button{
 	cursor: pointer;
 }
 
-.rb{
-	background-color: lightgray;
+#mesa{
+	border: 2px white;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.cb{
-	background-color: lightblue;
+#mesa tr{
+	border: 2px white;
 }
 
-a.creport, a.preport{
-	color: darkgray;
-	text-decoration: none;
-}
-
-a.creport {
-    display: none;
+#mesa td{
+	border: 2px white;
 }
 
 #about ul{

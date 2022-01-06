@@ -1,15 +1,30 @@
 {% extends 'base.html' %}
-{% set bgnum = range(1, 10) | random %}
-{% if 0 < bgnum <= 5 %}
-    {% set bgurl = 'bg1.gif' %}
-{% elif 5 < bgnum <= 10 %}
+{% set bgnum = range(1, 100) | random %}
+{% set bgnum = 4 %}
+{% if 0 < bgnum <= 1 %}
+    {% set bgurl = 'gato.jpeg' %}
+{% elif 1 < bgnum <= 2 %}
+    {% set bgurl = 'triangulo1.jpeg' %}
+{% elif 2 < bgnum <= 3 %}
+    {% set bgurl = 'triangulo2.jpeg' %}
+{% elif 3 < bgnum <= 100 %}
     {% set  bgurl = 'bg3.jpg' %}
 {% endif %}
 {% block bgimage %}{{ bgurl }}{% endblock %}
 {% block subtext %}
-um refúgio para mente e alma
+Para O Bem De Todos Os Seres
 {% endblock %}
 {% block content %}
-<a href="#"><button class="rb">textos</button></a>
-<a href="#"><button class="rb">práticas</button></a>
+    <div id="mesa">
+    <table id="mesa">
+    <tbody>
+    <tr>
+    <td>
+<a href="#"><img src="static/imgs/ensinamentos.png"> </a></td>
+<td><a href="#"><img src="static/imgs/praticas.png"> </a></td>
+<td><a href="#"><img src="static/imgs/textos.png"> </a></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
 {% endblock %}
