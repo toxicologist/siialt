@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<style>h2,h3,#subtext{text-shadow: 2px 2px 8px #000000;}</style>
+<title>{% block title %}{% endblock %}Sociedade Iniciática da Iluminação A.L.T.</title>
+<link rel='stylesheet' type='text/css' href='../static/main.css'/>
+<link rel='icon' type='image/x-icon' href='../static/favicon.ico'/>
+{% if bgimage%}
+<body style="background-image: url('../static/imgs/{% block bgimage %}{% endblock %}'); text-align: center;">
+{%endif %}
+<div id="wrapper">
+<nav><div id="header"><div id='title'>
+        {% if show_title_icon %}<img src="../static/favicon.ico" height="75px">{% endif %}<br/><a href="/" class="title">Sociedade Iniciática da Iluminação A.L.T.</a></div>
+    <div id='subtext'>{% block subtext %}{% endblock %}</div>
+</div>
+</nav>{% with messages = get_flashed_messages() %}{% if messages %}{% for message in messages %}<h3>{{ message }}</h3>
+{% endfor %}{% endif %}{% endwith %}
+{% block content %}{% endblock %}
+</div><div id="footer">
+{% block footer %}{% endblock %}<br/>
+<a href='' id='footer-url'></a>
+</div>
+</body>
+</html>

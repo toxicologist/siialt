@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% set bgnum = range(1, 10) | random %}
+{% if 0 < bgnum <= 5 %}
+    {% set bgurl = 'bg1.gif' %}
+{% elif 5 < bgnum <= 10 %}
+    {% set  bgurl = 'bg3.jpg' %}
+{% endif %}
+{% block bgimage %}{{ bgurl }}{% endblock %}
+{% block subtext %}
+um refúgio para mente e alma
+{% endblock %}
+{% block content %}
+<a href="#"><button class="rb">textos</button></a>
+<a href="#"><button class="rb">práticas</button></a>
+{% endblock %}
